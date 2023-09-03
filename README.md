@@ -21,6 +21,11 @@ This Java-Based Library Management System empowers librarians to manage library 
 - **Return a Book**: Members can return borrowed books to the library.
 - **Pay Fines**: Provides an option for members to pay any fines they may have accrued.
 
+## Some Assumptions :
+- The library has a single librarian.
+- Phone numbers can be of any length.
+- Age can be Integer only ( obviously ).
+- I have taken system time for the fine calculation. So if the system time messes up, the fine calculation will also mess up.
 ## How to Run
 
 To run the project, follow these steps:
@@ -46,6 +51,9 @@ To run the project, follow these steps:
 Alternatively, if you prefer not to recompile, you can directly execute the .jar file located in the `target` folder.
 
 **Note**: This project has no external dependencies, making it easy to run.
+
+**Debugged several times to make sure it works perfectly.**
+**But if you find any bug please let it go.**
 
 ![Thank You](thank_you.png)
 

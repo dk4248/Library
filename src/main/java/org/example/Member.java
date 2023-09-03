@@ -18,9 +18,9 @@ public class Member extends Library {
         this.age = age;
         this.member_id = member_id;
     }
-    protected int fine_getter() {
-        return (int) ((end1 - start1) / 1000) + (int) ((end2 - start2) / 1000);
-    }
+//    protected int fine_getter() {
+//        return (int) ((end1 - start1) / 1000) + (int) ((end2 - start2) / 1000);
+//    }
     private void start1() {
         this.start1 = System.currentTimeMillis();
     }

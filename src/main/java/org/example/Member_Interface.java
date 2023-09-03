@@ -143,12 +143,6 @@ public class Member_Interface extends Library{
             System.out.println();
             print_lines();
             mem_printer(member_in);
-        }
-        if (member_in.fine_getter() == 0 && member_in.books_issued == 0) {
-            print_red("You have no fine to be paid");
-            System.out.println();
-            print_lines();
-            mem_printer(member_in);
         }else if (member_in.fine_to_be_paid != 0 && member_in.books_issued != 0){
             print_red("You have a fine of Rs. " + member_in.fine_to_be_paid + " to be paid");
             System.out.println();
