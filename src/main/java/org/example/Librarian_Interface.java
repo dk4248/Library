@@ -272,7 +272,7 @@ public class Librarian_Interface extends Library{
     }
     private int input_taker_count = 0;
     void input_taker(){
-        if (input_taker_count >= 3){
+        if (input_taker_count >= 2){
             input_taker_count = 0;
             lib_checker();
             return;

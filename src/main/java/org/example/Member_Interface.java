@@ -91,6 +91,8 @@ public class Member_Interface extends Library{
     private void return_book(Member member_in){
         if (member_in.books_issued == 0){
             print_red("You have not issued any book");
+            System.out.println();
+            print_lines();
             mem_printer(member_in);
         }
         else {
@@ -173,7 +175,7 @@ public class Member_Interface extends Library{
         print_lines();
         for (Book book : book_Object_Array){
             if(!book.is_issued){
-                book.print_book_details();
+                book.print_details_without_availability();
                 print_lines();
             }
         }
@@ -181,7 +183,7 @@ public class Member_Interface extends Library{
     }
     private int mem_printer_count = 0;
     void mem_printer(Member member_in){
-        if(mem_printer_count >= 3){
+        if(mem_printer_count >= 2){
             mem_printer_count = 0;
             mem_interface(member_in);
             return;
@@ -226,6 +228,7 @@ public class Member_Interface extends Library{
             else {
                 print_red("Invalid Input");
                 System.out.println();
+                print_lines();
                 mem_printer(member_in);
             }
         }
@@ -312,6 +315,8 @@ public class Member_Interface extends Library{
             }
             default -> {
                 print_red("Invalid Input");
+                System.out.println();
+                print_lines();
                 mem_interface(member_in);
             }
         }

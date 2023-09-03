@@ -12,7 +12,6 @@ public class Member extends Library {
     protected int age;
     protected int member_id;
     protected int fine_to_be_paid = 0;
-    ArrayList<Book> issued_book_Object_Array = new ArrayList<Book>(2);
     Member(String name, String phone, int age, int member_id) {
         this.name = name;
         this.phone = phone;
@@ -63,6 +62,7 @@ public class Member extends Library {
         fine_to_be_paid += 3 * timer_book2(end2());
     }
     int books_issued = 0;
+    ArrayList<Book> issued_book_Object_Array = new ArrayList<Book>(2);
     void print_details_mem() {
         print_purple("Name : ");
         print(name);

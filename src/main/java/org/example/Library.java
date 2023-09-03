@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Library {
     void print_lines(){
-        System.out.println("------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("-".repeat(200));
     }
     void print_red(String s){
         System.out.print("\u001B[31m" + s + "\u001B[0m");
@@ -80,7 +80,11 @@ public class Library {
                 member_interface.member_checker();
             }
             case "3" -> {
+                System.out.println();
                 print_green("Thanks for using the Library");
+                System.out.println();
+                System.out.println();
+                System.out.println("*".repeat(200));
                 System.exit(0);
             }
             default -> {
