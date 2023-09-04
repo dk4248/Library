@@ -92,6 +92,13 @@ public class Librarian_Interface extends Library{
             print_lines();
             input_taker();
         }
+        if (member_Object_Array.get(member_id_ip - 1).books_issued > 0){
+            print_lines();
+            print_red("Member has books issued");
+            System.out.println();
+            print_lines();
+            input_taker();
+        }
         else{
             for(Member member : member_Object_Array){
                 if (member.member_id == member_id_ip){
